@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(21, 20, 20);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .card {
+  position: absolute;
+  height: 320px;
+  width: 240px;
+  border-radius: 9px;
+  font-size: 8em;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  background: #5e5cfc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  z-index: calc(var(--i) * 100);
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  filter: hue-rotate(calc(var(--i) * 50deg));
+}
+
+.container:hover .card {
+  transform: rotate();
+}
