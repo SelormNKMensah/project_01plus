@@ -41,5 +41,5 @@ body {
 }
 
 .container:hover .card {
-  transform: rotate();
+  transform: translate();
 }
